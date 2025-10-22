@@ -16,6 +16,6 @@ services:
       - "DJANGO_ZARINPAL_MERCHANT_ID=${DOCKER_COMPOSE_DJANGO_ZARINPAL_MERCHANT_ID}"
 
   db:
-    image: postgres:14
+    image: my-registry/postgres:14
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
