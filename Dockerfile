@@ -6,6 +6,8 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /code
 
 COPY requirements.txt /code/
+
+RUN pip install setuptools==65.5.0  
 RUN pip install -r requirements.txt
 
 COPY . /code/
